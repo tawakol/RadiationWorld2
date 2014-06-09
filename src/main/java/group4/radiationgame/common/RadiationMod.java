@@ -32,15 +32,17 @@ public class RadiationMod
     	//WorldType RadiationWorld = new WorldType("Radiation World");
     	
     	RadiationWorld world = new RadiationWorld();
-    	
+    	//create a new SourceRadiationBlock instance, then set its properties
     	Block SourceRadiationBlock = new SourceRadiationBlock(Material.ground)
 		.setBlockName("SourceRadiationBlock")
 		.setHardness(0.5F)
 		.setStepSound(Block.soundTypeMetal)
 		.setCreativeTab(CreativeTabs.tabBlock)
+		
+		//Texture picture for the block is not showing correctly now.
 		.setBlockTextureName("RadiationMod:SourceRadiationBlock");
 	
-	
+	//register the new block to the game.
 	GameRegistry.registerBlock(SourceRadiationBlock, "SourceRadiationBlock");
     	
     	
