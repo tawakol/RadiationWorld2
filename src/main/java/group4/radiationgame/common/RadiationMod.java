@@ -1,5 +1,6 @@
 package group4.radiationgame.common;
 
+import group4.radiationgame.block.SourceRadiationBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -31,6 +32,18 @@ public class RadiationMod
     	//WorldType RadiationWorld = new WorldType("Radiation World");
     	
     	RadiationWorld world = new RadiationWorld();
+    	
+    	Block SourceRadiationBlock = new SourceRadiationBlock(Material.ground)
+		.setBlockName("SourceRadiationBlock")
+		.setHardness(0.5F)
+		.setStepSound(Block.soundTypeMetal)
+		.setCreativeTab(CreativeTabs.tabBlock)
+		.setBlockTextureName("RadiationMod:SourceRadiationBlock");
+	
+	
+	GameRegistry.registerBlock(SourceRadiationBlock, "SourceRadiationBlock");
+    	
+    	
 
     	
     }
