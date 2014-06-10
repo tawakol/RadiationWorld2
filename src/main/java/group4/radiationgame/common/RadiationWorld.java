@@ -15,6 +15,7 @@ import net.minecraft.world.WorldProvider;
 public class RadiationWorld {
 	public RadiationWorld(){
 		WorldType RadiationWorld = new WorldType("RadiationWorld");
+		
 	}
 
 }
